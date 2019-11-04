@@ -2,12 +2,23 @@
 	margin:0;
 	padding: 0;
 	box-sizing: border-box;
-	 user-select: none;
+	user-select: none;
+	outline:none;
+
 }
 body{
 	width: 100%;
-	  background: linear-gradient(to right, #b2fefa, #0ed2f7);
+	background: linear-gradient(to right, #b2fefa, #0ed2f7);
+	height: 1000px;
+
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #eee;
+}
+
 
 #ALL{
 	width: 100%;
@@ -32,6 +43,7 @@ body{
 	background-image: url(1.jpg);
 	background-size: 100% 100%;	
 	position: relative;
+
 }
 #b2 {
 	background-image: url(2.jpg);
@@ -75,7 +87,7 @@ body{
 }
 
 #ALL button:hover {
-	transform: scale(1.09);
+	transform: scale(1.1);
 	transition:0.2s;
 
 }
@@ -125,26 +137,48 @@ body{
 	display: flex;
 	justify-content: center;
 	position: absolute;
+	transition: 0.2s;
 }
 #d1 {
 	width: 50%;
 	height: 600px;
-	background-color: #eee;
+	background-color: rgba(169,169,169,0.9);
 	position: absolute;
 	z-index: 4;
 	display: none;
 	position: fixed;
-	border:2px solid black;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	overflow-y: scroll;
 	
 
 
 }
 #d1 #close {
-	background-color: red;
+	background:none;
 	border-radius: 0%;
 	width: 20px;
 	height: 20px;
 	float: right;
+
+
 }
 
+#d1 h1 {
+	font-size: 55px;
+	font-family: 'Pacifico', cursive;
+	color: black;
 
+}
+#d1 p {
+	font-size: 19px;
+}
+span{
+	color: black;
+}
+#d1 h3{
+	font-family: 'Pacifico', cursive;
+	color: black;
+
+}
