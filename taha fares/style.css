@@ -1,0 +1,150 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	 user-select: none;
+}
+body{
+	width: 100%;
+	  background: linear-gradient(to right, #b2fefa, #0ed2f7);
+}
+
+#ALL{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: relative;
+	top: 70px;
+}
+#ALL button{
+	width: 30%;
+	height: 400px;
+	margin: 20px;
+	border-radius: 50%;
+	border: 1px solid black;
+	transition:0.2s;
+
+
+
+}
+#b1 {
+	background-image: url(1.jpg);
+	background-size: 100% 100%;	
+	position: relative;
+}
+#b2 {
+	background-image: url(2.jpg);
+	background-size: 100% 100%;
+	position: relative;
+}
+#b3 {
+	background-image: url(3.jpg);
+	background-size: 100% 100%;
+	position: relative;
+}
+#b4 {
+	background-image: url(4.jpeg);
+	background-size: 100% 100%;
+	position: relative;
+}
+#b5 {
+	background-image: url(5.jpg);
+	background-size: 100% 100%;
+	position: relative;
+}
+#b6 {
+	background-image: url(6.jpg);
+	background-size: 100% 100%;
+	position: relative;
+}
+#b7 {
+	background-image: url(7.jpeg);
+	background-size: 100% 100%;
+	position: relative;
+}
+#b8 {
+	background-image: url(8.jpeg);
+	background-size: 100% 100%;
+	position: relative;
+}
+#b9 {
+	background-image: url(9.jpeg);
+	background-size: 100% 100%;
+	position: relative;
+}
+
+#ALL button:hover {
+	transform: scale(1.09);
+	transition:0.2s;
+
+}
+
+#ALL button::after{
+	content: "";
+	top:100%;
+	bottom: 0;
+	left: 100%;
+	right: 100%;
+	background-color: rgba(169,169,169,0.7);
+	position: absolute;
+	border-radius: 50%;
+	transition: 0.2s;
+}
+#ALL button:hover::after{
+	content: "";
+	text-align: center;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(169,169,169,0.7);
+	position: absolute;
+	border-radius: 50%;
+	border-radius: 50%;
+	transition: 0.2s;
+	z-index: -1
+
+}
+#ALL button h1{
+	visibility: hidden;
+	font-size: 30px;
+	color: white;
+	font-family: sans-serif;
+	
+}
+#ALL button:hover h1{
+	visibility: visible;
+	z-index: 3;
+	transition: 0.8s;
+	color:white;
+}
+#pop {
+	width: 100%;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+}
+#d1 {
+	width: 50%;
+	height: 600px;
+	background-color: #eee;
+	position: absolute;
+	z-index: 4;
+	display: none;
+	position: fixed;
+	border:2px solid black;
+	
+
+
+}
+#d1 #close {
+	background-color: red;
+	border-radius: 0%;
+	width: 20px;
+	height: 20px;
+	float: right;
+}
+
+
