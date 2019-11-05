@@ -135,6 +135,9 @@ body{
 	z-index: -1
 
 }
+#ingredient{
+	text-align: left;
+}
 #ALL button h1{
 	visibility: hidden;
 	font-size: 30px;
@@ -169,9 +172,13 @@ body{
 	text-align: center;
 	overflow-y: scroll;
 	top: 50px;
+
 	
 
 
+}
+#step{
+	text-align: left;
 }
 #d1 #close {
 	background:none;
