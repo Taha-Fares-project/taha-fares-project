@@ -182,3 +182,19 @@ section{
 	padding: 20px;
 
 }
+section #deleteAll{
+
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-color: #93291e;
+	bottom: 5px;
+	right: 5px;
+}
+section h3{
+	position: absolute;
+	bottom: 15px;
+	right: 200px;
+	font-size: 25px;
+	
+}
